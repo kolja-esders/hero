@@ -1,0 +1,5 @@
+smartphone:iphone,galaxy s,smartphone
+laptop:mac,chromebook,thinkpad
+oven:oven,microwave
+tv:tv,smarttv
+imac:tvmonitor

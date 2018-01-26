@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/welcome_low"
+    tools:context="com.teampietro.hero.WelcomeFragment">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:id="@+id/logo_container">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:layout_marginLeft="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/imageView"
+            android:text="HERO"
+            android:textStyle="bold"
+            android:textColor="#f0eaea"
+            android:textSize="64sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_below="@id/logo_container"
+        android:textAlignment="center"
+        android:layout_marginTop="32dp"
+        android:textSize="21sp"
+        android:fontFamily="sans-serif-thin"
+        android:textColor="#fff"
+        android:layout_height="wrap_content"
+        android:text="Unite and Compete with Fans."/>
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="match_parent"
+        android:layout_below="@id/text1"
+        android:textAlignment="center"
+        android:layout_marginTop="16dp"
+        android:textSize="21sp"
+        android:fontFamily="sans-serif-thin"
+        android:textColor="#fff"
+        android:layout_height="wrap_content"
+        android:text="Become Your Hero."/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_below="@id/text2"
+        android:textAlignment="center"
+        android:layout_marginTop="16dp"
+        android:textSize="21sp"
+        android:fontFamily="sans-serif-thin"
+        android:textColor="#fff"
+        android:layout_height="wrap_content"
+        android:text="Beat Yourself."/>
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_button"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="200dp"
+        android:paddingBottom="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="20dp"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/alternative"
+        android:layout_width="280dp"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_height="62dp"
+        android:layout_alignTop="@+id/login_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="77dp"
+        android:onClick="to2site"
+        android:background="@drawable/alternative_button"
+        android:textColor="#888"
+        android:shadowColor="#00000000"
+        android:text="Answer questions" />
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="207dp" />
+
+</RelativeLayout>

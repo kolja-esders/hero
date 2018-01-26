@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    tools:context="com.teampietro.hero.MainBoard">
+
+    <RelativeLayout
+        android:id="@+id/topLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:elevation="8dp"
+        android:background="#fff"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/currentScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="sans-serif-thin"
+            android:text="tmp"
+            android:textAlignment="textStart"
+            android:textColor="#66bb6a"
+            android:textSize="54sp" />
+
+        <ImageView
+            android:id="@+id/trend"
+            android:layout_width="wrap_content"
+            android:layout_height="68dp"
+            android:layout_marginRight="8dp"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/currentScore"
+            android:src="@drawable/ic_trending_up" />
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profileImage"
+            android:layout_width="68dp"
+            android:layout_height="68dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/kolja"
+            android:visibility="visible"
+            />
+
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_centerInParent="false"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@+id/profileImage"
+            android:fontFamily="sans-serif-thin"
+            android:text="Kolja"
+            android:textAlignment="textStart"
+            android:textColor="#242628"
+            android:textSize="32sp" />
+
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topLayout"
+        android:layout_marginBottom="56dp" />
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        tools:context="com.teampietro.hero.MainBoard">
+
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/navigation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="0dp"
+            android:layout_marginStart="0dp"
+            app:itemTextColor="@color/nav_color"
+            app:itemIconTint="@color/nav_color"
+            android:background="#3766B1"
+            app:menu="@menu/navigation" />
+    </android.support.constraint.ConstraintLayout>
+
+</RelativeLayout>

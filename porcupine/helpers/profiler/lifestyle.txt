@@ -1,0 +1,3 @@
+concert:concert,concerts,music,konzert
+smoking:smoking,maloboro,shisha
+

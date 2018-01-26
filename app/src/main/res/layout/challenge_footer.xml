@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_footer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/claimBtn"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:textAlignment="center"
+        android:background="@drawable/claim_button"
+        android:text="Claim rewards"
+        android:gravity="center"
+        android:paddingTop="8dp"
+        android:textColor="#fff"
+        android:paddingBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"/>
+
+</LinearLayout>

@@ -1,0 +1,4 @@
+---
+applications:
+- name: heroporcupine
+  memory: 512M

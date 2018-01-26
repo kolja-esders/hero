@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipToPadding="false"
+    android:background="#f0f0f0"
+    tools:context="com.teampietro.hero.RewardFragment"
+    >
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:paddingTop="8dp"
+        android:visibility="visible" />
+
+
+    <RelativeLayout
+
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cv"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:visibility="visible"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="3dp"
+        android:clipToPadding="false"
+
+
+        >
+
+
+        <de.hdodenhof.circleimageview.CircleImageView  xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/reward_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/stadium" />
+
+
+
+            <TextView
+                android:id="@+id/reward_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="30dp"
+                android:layout_toEndOf="@+id/reward_image"
+                android:fontFamily="sans-serif-thin"
+                android:gravity="center_vertical"
+                android:text="FCB4Ever"
+                android:textSize="24sp"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/button3"
+
+                android:text="Meet him/her"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/ranking_name"
+                android:layout_alignBottom="@+id/ranking_name"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="19dp"
+                android:fontFamily="sans-serif-thin"
+
+                android:textSize="20sp"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+
+
+
+</LinearLayout>
+

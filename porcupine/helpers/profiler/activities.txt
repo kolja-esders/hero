@@ -1,0 +1,4 @@
+running:running
+snowboarding:snowboarding,snowboard
+swimming:swim,swimming,swimming pool,crawling
+biking:bike,biking,mountain biking,cross road,cycling
