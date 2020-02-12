@@ -3,7 +3,7 @@ chardet==3.0.4
 click==6.7
 cycler==0.10.0
 Cython==0.27.1
-Django==1.11.6
+Django==1.11.28
 django-custom-user==0.7
 django-environ==0.4.1
 django-filter==1.0.4
